@@ -20,4 +20,23 @@ class PagesController < ApplicationController
     @title = "About Us"
   end
 
+  def fortune
+    fortunes = [
+      "You will be a billionaire",
+      "You will be hungry in 1 hour",
+      "You will fall asleep in 1 minute"
+    ]
+    @fortune = fortunes.sample
+  end
+
+  def lotto
+    @numbers = []
+    6.times do
+      @numbers << rand(1..60)
+    end
+  end
+
+  def count
+  end
+
 end

@@ -5,4 +5,9 @@ Rails.application.routes.draw do
   get "/contact_url" => "pages#contact_method"
   get "/about" => "pages#about"
 
+
+  get "/fortune" => "pages#fortune"
+  get "/lotto" => "pages#lotto"
+  get "/count" => "pages#count"
+
 end

@@ -1,0 +1,12 @@
+<h1>Lotto</h1>
+
+<% @numbers.each do |number| %>
+  Number: <%= number %>
+  <br />
+<% end %>
+
+
+<% 6.times do %>
+  <%= rand(1..60) %>
+<% end %>
+
