@@ -39,4 +39,32 @@ class PagesController < ApplicationController
   def count
   end
 
+
+  def bonus
+    person1 = { :first_name => "Some", 
+                :last_name => "Person", 
+                :account_number => rand.to_s[2..11], 
+                :email_address => "email@email.com" 
+              }
+
+    person2 = { :first_name => "Second", 
+                :last_name => "Person", 
+                :account_number => rand.to_s[2..11], 
+                :email_address => "email@email.com" 
+              }
+
+    person3 = { :first_name => "Third", 
+                :last_name => "Person", 
+                :account_number => rand.to_s[2..11], 
+                :email_address => "email@email.com" 
+              }
+
+    # people = []
+    # people << person1
+    # people << person2
+    # people << person3
+
+    @people = [person1, person2, person3]
+  end
+
 end

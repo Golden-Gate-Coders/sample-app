@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get "/fortune" => "pages#fortune"
   get "/lotto" => "pages#lotto"
   get "/count" => "pages#count"
+  get "/bonus" => "pages#bonus"
 
 end
